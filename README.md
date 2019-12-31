@@ -1,2 +1,2 @@
 # ebd-templo-central
- Cadastro Escola Bíblica dominical
+ Cadastro Escola Bíblica Dominical
