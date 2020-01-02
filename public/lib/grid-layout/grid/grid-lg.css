@@ -1,0 +1,33 @@
+/*desktops:; 992px, 1199px*/
+@media ( min-width: 992px ) {
+    [ lg^="1-"  ] { grid-column-start: 1;  }
+    [ lg^="2-"  ] { grid-column-start: 2;  }
+    [ lg^="3-"  ] { grid-column-start: 3;  }
+    [ lg^="4-"  ] { grid-column-start: 4;  }
+    [ lg^="5-"  ] { grid-column-start: 5;  }
+    [ lg^="6-"  ] { grid-column-start: 6;  }
+    [ lg^="7-"  ] { grid-column-start: 7;  }
+    [ lg^="8-"  ] { grid-column-start: 8;  }
+    [ lg^="9-"  ] { grid-column-start: 9;  }
+    [ lg^="10-" ] { grid-column-start: 10; }
+    [ lg^="11-" ] { grid-column-start: 11; }
+    [ lg^="12-" ] { grid-column-start: 12; }
+    [ lg$="-1"  ] { grid-column-end: 2;  }
+    [ lg$="-2"  ] { grid-column-end: 3;  }
+    [ lg$="-3"  ] { grid-column-end: 4;  }
+    [ lg$="-4"  ] { grid-column-end: 5;  }
+    [ lg$="-5"  ] { grid-column-end: 6;  }
+    [ lg$="-6"  ] { grid-column-end: 7;  }
+    [ lg$="-7"  ] { grid-column-end: 8;  }
+    [ lg$="-8"  ] { grid-column-end: 9;  }
+    [ lg$="-9"  ] { grid-column-end: 10; }
+    [ lg$="-10" ] { grid-column-end: 11; }
+    [ lg$="-11" ] { grid-column-end: 12; }
+    [ lg$="-12" ] { grid-column-end: 13; }
+
+    [ lg-hide ]      { display: none; }
+    [ lg-show ]      { display: block; }
+    [ lg-invisible ] { visibility: hidden; }
+    [ lg-visible ]   { visibility: visible; }
+    font-size: 14.5px;
+}

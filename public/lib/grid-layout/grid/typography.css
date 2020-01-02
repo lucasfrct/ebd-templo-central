@@ -1,0 +1,137 @@
+i        { line-height: inherit; }
+summary  { display: list-item; }
+strong 	 { font-weight: 500; }
+small 	 { font-size: 75%; }
+
+dfn,
+em 	 { font-style: italic; }
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+details,
+menu {
+	display: block;
+}
+
+blockquote {
+	margin: 20px 0;
+	padding-left: 1.5rem;
+	border-left: 5px;
+	border-left-color: #ee6e73;
+	border-left-style: solid;  
+}
+
+.material-icons {
+	text-rendering: optimizeLegibility;
+	-webkit-font-feature-settings: 'liga';
+	-moz-font-feature-settings: 'liga';
+	font-feature-settings: 'liga';
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 110%;
+	margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: inherit;
+}
+
+h1 {
+	font-size: 4.2rem;
+	margin-top: 2.8rem;
+	margin-bottom: 1.68rem;
+}
+
+h2 {
+	font-size: 3.56rem;
+	margin-top: 2.3733333333rem; 
+	margin-bottom: 1.424rem;
+}
+
+h3 {
+	font-size: 2.92rem;
+	margin-top: 1.9466666667rem;
+	margin-bottom: 1.168rem;
+}
+
+h4 {
+	font-size: 2.28rem;
+	margin-top: 1.52rem;
+	margin-bottom: 0.912rem;
+}
+
+h5 {
+	font-size: 1.64rem;
+	margin-top: 1.0933333333rem ;
+	margin-bottom: 0.656rem;
+}
+
+h6 {
+	font-size: 1.15rem;
+	margin-top: 0.7666666667rem;
+	margin-bottom: 0.46rem;
+}
+
+abbr[ title ] {
+	border-bottom: none;
+	text-decoration: underline;
+	-webkit-text-decoration: underline dotted;
+	-moz-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+}
+
+footer .copyright {
+	overflow: hidden;
+	min-height: 50px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 10px 0px;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(51, 51, 51, 0.08);
+}
+
+@media (max-width: 360px) { .fluid { font-size: 1.2rem; } }
+@media (min-width: 360px) { .fluid { font-size: 1.2rem; } }
+@media (min-width: 390px) { .fluid { font-size: 1.224rem; } }
+@media (min-width: 420px) { .fluid { font-size: 1.248rem; } }
+@media (min-width: 450px) { .fluid { font-size: 1.272rem; } }
+@media (min-width: 480px) { .fluid { font-size: 1.296rem; } }
+@media (min-width: 510px) { .fluid { font-size: 1.32rem; } }
+@media (min-width: 540px) { .fluid { font-size: 1.344rem; } }
+@media (min-width: 570px) { .fluid { font-size: 1.368rem; } }
+@media (min-width: 600px) { .fluid { font-size: 1.392rem; } }
+@media (min-width: 630px) { .fluid { font-size: 1.416rem; } }
+@media (min-width: 660px) { .fluid { font-size: 1.44rem; } }
+@media (min-width: 690px) { .fluid { font-size: 1.464rem; } }
+@media (min-width: 720px) { .fluid { font-size: 1.488rem; } }
+@media (min-width: 750px) { .fluid { font-size: 1.512rem; } }
+@media (min-width: 780px) { .fluid { font-size: 1.536rem; } }
+@media (min-width: 810px) { .fluid { font-size: 1.56rem; } }
+@media (min-width: 840px) { .fluid { font-size: 1.584rem; } }
+@media (min-width: 870px) { .fluid { font-size: 1.608rem; } }
+@media (min-width: 900px) { .fluid { font-size: 1.632rem; } }
+@media (min-width: 930px) { .fluid { font-size: 1.656rem; } }
+@media (min-width: 960px) { .fluid { font-size: 1.68rem; } }

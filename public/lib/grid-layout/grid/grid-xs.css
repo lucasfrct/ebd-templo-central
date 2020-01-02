@@ -1,0 +1,33 @@
+/*portrait phones: 320px, 575px*/
+@media ( min-width: 32px ) {
+    [ xs^="1-"  ] { grid-column-start: 1;  }
+    [ xs^="2-"  ] { grid-column-start: 2;  }
+    [ xs^="3-"  ] { grid-column-start: 3;  } 
+    [ xs^="4-"  ] { grid-column-start: 4;  }
+    [ xs^="5-"  ] { grid-column-start: 5;  }
+    [ xs^="6-"  ] { grid-column-start: 6;  }
+    [ xs^="7-"  ] { grid-column-start: 7;  }
+    [ xs^="8-"  ] { grid-column-start: 8;  }
+    [ xs^="9-"  ] { grid-column-start: 9;  }
+    [ xs^="10-" ] { grid-column-start: 10; }
+    [ xs^="11-" ] { grid-column-start: 11; }
+    [ xs^="12-" ] { grid-column-start: 12; }
+    [ xs$="-1"  ] { grid-column-end: 2;  }
+    [ xs$="-2"  ] { grid-column-end: 3;  }
+    [ xs$="-3"  ] { grid-column-end: 4;  }
+    [ xs$="-4"  ] { grid-column-end: 5;  }
+    [ xs$="-5"  ] { grid-column-end: 6;  }
+    [ xs$="-6"  ] { grid-column-end: 7;  }
+    [ xs$="-7"  ] { grid-column-end: 8;  }
+    [ xs$="-8"  ] { grid-column-end: 9;  }
+    [ xs$="-9"  ] { grid-column-end: 10; }
+    [ xs$="-10" ] { grid-column-end: 11; }
+    [ xs$="-11" ] { grid-column-end: 12; }
+    [ xs$="-12" ] { grid-column-end: 13; }
+
+    [ xs-hide ]      { display: none; }
+    [ xs-show ]      { display: block; }
+    [ xs-invisible ] { visibility: hidden; }
+    [ xs-visible ]   { visibility: visible; }
+    font-size: 14px
+}

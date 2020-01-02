@@ -1,0 +1,33 @@
+/*large desktops:; 1200px and up */
+@media ( min-width: 1200px ) {
+    [ xl^="1-"  ] { grid-column-start: 1;  }
+    [ xl^="2-"  ] { grid-column-start: 2;  }
+    [ xl^="3-"  ] { grid-column-start: 3;  }
+    [ xl^="4-"  ] { grid-column-start: 4;  }
+    [ xl^="5-"  ] { grid-column-start: 5;  }
+    [ xl^="6-"  ] { grid-column-start: 6;  }
+    [ xl^="7-"  ] { grid-column-start: 7;  } 
+    [ xl^="8-"  ] { grid-column-start: 8;  }
+    [ xl^="9-"  ] { grid-column-start: 9;  }
+    [ xl^="10-" ] { grid-column-start: 10; }
+    [ xl^="11-" ] { grid-column-start: 11; }
+    [ xl^="12-" ] { grid-column-start: 12; }
+    [ xl$="-1"  ] { grid-column-end: 2;  }
+    [ xl$="-2"  ] { grid-column-end: 3;  }
+    [ xl$="-3"  ] { grid-column-end: 4;  }
+    [ xl$="-4"  ] { grid-column-end: 5;  }
+    [ xl$="-5"  ] { grid-column-end: 6;  }
+    [ xl$="-6"  ] { grid-column-end: 7;  }
+    [ xl$="-7"  ] { grid-column-end: 8;  }
+    [ xl$="-8"  ] { grid-column-end: 9;  }
+    [ xl$="-9"  ] { grid-column-end: 10; }
+    [ xl$="-10" ] { grid-column-end: 11; }
+    [ xl$="-11" ] { grid-column-end: 12; }
+    [ xl$="-12" ] { grid-column-end: 13; }
+
+    [ xl-hide ]      { display: none; }
+    [ xl-show ]      { display: block; }
+    [ xl-invisible ] { visibility: hidden; }
+    [ xl-visible ]   { visibility: visible; }
+    font-size: 15px;
+}

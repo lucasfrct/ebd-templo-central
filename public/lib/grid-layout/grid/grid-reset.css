@@ -1,0 +1,259 @@
+/* teste  de comentário*/
+@charset "UTF-8";
+
+*, 
+*::before, 
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+body > * {  
+    scroll-behavior: smooth;
+}
+
+body {  
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    border: solid 1px transparent;
+}
+
+header,
+main,
+footer {
+    display: webkit-grid;
+    display: moz-grid;
+    display: ms-grid;
+    display: o-grid;
+    display: grid;
+    page-break-after: always;
+    margin: 0;
+    padding: 0;
+}
+
+header, 
+footer {
+  padding-top: 20px;
+  color: #fff;
+}
+
+footer {
+  background-color: #ee6e73;
+}
+
+article,
+aside,
+nav,
+section {
+    display: block;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+a {
+    background-color: transparent;
+    color: #039be5;
+    text-decoration: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+b,
+strong {
+    font-weight: inherit;
+    font-weight: bolder;
+}
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}   
+
+sup {
+    top: -0.5em;
+}
+
+img,
+svg,
+canvas,
+[ circle ] {
+    border: none;
+    background-color:  rgba( 230, 230, 230 );
+    min-width: 32px;
+    min-height: 32px;
+    color: #888;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+canvas {
+  display: inline-block;
+}
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+template {
+    display: none;
+}
+
+[ hide ] {
+    display: none;
+}
+
+[ invisible ] {
+    visibility: hidden;
+}
+
+[ show ] {
+    display: block;
+}
+
+[ visible ] {
+    visibility: visible;
+}
+
+[ center-horizontal ], 
+[ center-vertical ],
+[ center-block ],
+[ center ] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+[ center-horizontal ],
+[ center-block ],
+[ center ] {
+    justify-content: center;
+}
+
+[ center-vertical ],
+[ center-block ] {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+[ left ] {
+    float: left;
+}
+
+[ right ] {
+    float: right;
+}
+
+[ clear ] {
+    clear: both;
+}
+
+[ divider ] {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+[ circle ] {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+[ truncate ] {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+[ no-padding ] {
+    padding: 0;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container > iframe, 
+.video-container > object, 
+.video-container > embed,
+.video-container > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img.responsive,
+video.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption,
+figure {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
