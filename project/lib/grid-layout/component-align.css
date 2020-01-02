@@ -1,0 +1,86 @@
+.centerY-relative {
+    position: relative !important;
+    top: 50% !important;
+    -webkit-transform: translateY(-50%) !important;
+    -moz-transform: translateY(-50%) !important;
+    -o-transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
+}
+
+.centerY-absolute {
+    position: absolute !important;
+    top: 50% !important;
+    -webkit-transform: translate(0, -50%) !important;
+    -moz-transform: translate(0, -50%) !important;
+    -o-transform: translate(0, -50%) !important;
+    transform: translate(0, -50%) !important;
+    float: left !important;
+}
+
+.centerX{
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -o-flex !important;
+    display: flex !important;
+
+    -webkit-justify-content: center !important;
+    -moz-justify-content: center !important;
+    -o-justify-content: center !important;
+    justify-content: center !important;
+
+    -webkit-flex-direction: wrap !important;
+    -moz-flex-direction: wrap !important;
+    -o-flex-direction: wrap !important;
+    flex-direction: wrap !important;
+
+    text-align: center !important;
+}
+
+.centerY {
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -o-flex !important;
+    display: flex !important;
+
+    -webkit-align-items: center !important;
+    -moz-align-items: center !important;
+    -o-align-items: center !important;
+    align-items: center !important;
+
+    -webkit-flex-direction: wrap !important;
+    -moz-flex-direction: wrap !important;
+    -o-flex-direction: wrap !important;
+    flex-direction: wrap !important;
+}
+
+.centerXY{
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -o-flex !important;
+    display: flex !important;
+
+    -webkit-align-items: center !important;
+    -moz-align-items: center !important;
+    -o-align-items: center !important;
+    align-items: center !important;
+
+    -moz-justify-content: center !important;
+    -o-justify-content: center !important;
+    justify-content: center !important;
+
+    -webkit-flex-direction: column !important;
+    -moz-flex-direction: column !important;
+    -o-flex-direction: column !important;
+    flex-direction: column !important;
+
+    text-align: center !important;
+    margin: 0 auto !important;
+    white-space: nowrap !important;
+    word-wrap: break-word !important;
+    resize: vertical !important;
+}
+
+.bottom-align{
+    position: absolute;
+    bottom: 0;
+}

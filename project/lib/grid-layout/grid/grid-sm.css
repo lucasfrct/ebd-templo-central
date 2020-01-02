@@ -1,0 +1,33 @@
+/*landscape phones:; 576px, 767px*/
+@media ( min-width: 576px ) {
+    [ sm^="1-"  ] { grid-column-start: 1;  }
+    [ sm^="2-"  ] { grid-column-start: 2;  }
+    [ sm^="3-"  ] { grid-column-start: 3;  }
+    [ sm^="4-"  ] { grid-column-start: 4;  }
+    [ sm^="5-"  ] { grid-column-start: 5;  }
+    [ sm^="6-"  ] { grid-column-start: 6;  }
+    [ sm^="7-"  ] { grid-column-start: 7;  }
+    [ sm^="8-"  ] { grid-column-start: 8;  }
+    [ sm^="9-"  ] { grid-column-start: 9;  }
+    [ sm^="10-" ] { grid-column-start: 10; }
+    [ sm^="11-" ] { grid-column-start: 11; }
+    [ sm^="12-" ] { grid-column-start: 12; }
+    [ sm$="-1"  ] { grid-column-end: 2;  }
+    [ sm$="-2"  ] { grid-column-end: 3;  }
+    [ sm$="-3"  ] { grid-column-end: 4;  }
+    [ sm$="-4"  ] { grid-column-end: 5;  }
+    [ sm$="-5"  ] { grid-column-end: 6;  }
+    [ sm$="-6"  ] { grid-column-end: 7;  }
+    [ sm$="-7"  ] { grid-column-end: 8;  }
+    [ sm$="-8"  ] { grid-column-end: 9;  }
+    [ sm$="-9"  ] { grid-column-end: 10; }
+    [ sm$="-10" ] { grid-column-end: 11; }
+    [ sm$="-11" ] { grid-column-end: 12; }
+    [ sm$="-12" ] { grid-column-end: 13; }
+
+    [ sm-hide ]      { display: none; }
+    [ sm-show ]      { display: block; }
+    [ sm-invisible ] { visibility: hidden; }
+    [ sm-visible ]   { visibility: visible; }
+    font-size: 14px;
+}
