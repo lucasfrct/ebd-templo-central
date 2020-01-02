@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br" ng-app="ebd">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EBD</title>
+
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-reset.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/typography.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/component-window.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/component-align.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-container.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xs.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-sm.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-md.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-lg.css">
+    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xl.css">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.6.1/firebase-app.js"></script>
@@ -18,56 +29,17 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-    <style media="screen">
-      body { 
-        background: #ECEFF1; 
-        color: rgba(0,0,0,0.87); 
-        font-family: Roboto, Helvetica, Arial, sans-serif;
-        margin: 0; 
-        padding: 0; 
-      }
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
 
-      h1, h2 {
-        text-align: center;
-        font-size: 3.3em;
-        color: #FFFFFF;
-      }
+    <script src="app/ebd.module.js"></script>
+    <script src="app/ebd.config.js"></script>
 
-      section {
-        width: 100vw;
-        height: 20vh;
-        display: block;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+    <script src="app/home/home.component.js"></script>
 
-      figure {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        background-color:transparent;
-        z-index: -1;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        vertical-align: top;
-        z-index: -1;
-        object-fit: cover;
-      }
-    </style>
   </head>
-  <body>
-    <section>
-      <figure><img src="vendor/images/bible.jpg"></figure>
-    </section>
-    <h1>EDB da Assembleia de Deus Templo Central</h1>
-    <h2>Uma Igreja em Família!</h2>
-
-    </script>
+  <body class="fluid">
+    <a href="https://quizlet.com/pt-br" style="position:absolute;z-index:10000;background-color:#000;color:#FFF;padding:4px;">Site Modelo</a>
+    <ng-view></ng-view>
   </body>
 </html>
