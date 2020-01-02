@@ -20,6 +20,7 @@ Gulp.task("VendorScss", VendorScssCompiler);
 Gulp.task("VendorJS", VendorJsCompiler);
 Gulp.task("VendorImg", VendorImgCompiler);
 Gulp.task("AppJs", AppJsCompiler);
+Gulp.task("Lib", LibCompiler);
 
 Gulp.task('init', function() {
     Gulp.watch("project/*.html", Gulp.series('MainHtml'));
@@ -27,6 +28,7 @@ Gulp.task('init', function() {
     Gulp.watch("project/vendor/js/**/*.js", Gulp.series('VendorJS'));
     Gulp.watch("project/vendor/images/**/*", Gulp.series('VendorImg'));
     Gulp.watch("project/app/**/*", Gulp.series('AppJs'));
+    Gulp.watch("project/lib/**/*", Gulp.series('Lib'));
 });
 
 function MainHtmlCompiler ( ) {
@@ -75,3 +77,10 @@ function CompilerSass ( origin, destinity ) {
         .pipe(CleanCss())
         .pipe(Gulp.dest(destinity));
 };
+
+function LibCompiler ( ) {
+    return Gulp 
+        .src("project/lib/**/*")
+        .pipe(Gulp.dest("public/lib"));
+};
+
