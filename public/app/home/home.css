@@ -1,0 +1,153 @@
+home {
+
+}
+
+home main section {
+    min-height: calc(100vh - 2px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+home main section:first-child {
+    min-height: calc(100vh - 80px) !important;
+}
+
+home main section:last-child {
+    min-height: calc(100vh - 145px) !important;
+}
+
+home main section > * {
+}
+
+home figure, home img {
+    background-color: transparent;
+}
+
+home section.sct-1,
+home section.sct-2,
+home section.sct-3,
+home section.sct-4 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+home section.sct-1 {
+    background-image: url("../../vendor/images/ebd-bg-0.jpg"); 
+}
+
+home section.sct-2 {
+    background-image: url("../../vendor/images/bible-01.jpg"); 
+}
+
+home section.sct-4 {
+    background-image: url("../../vendor/images/oration.jpg"); 
+}
+
+home h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+home .copy {
+    padding: 1em 1em 1em 2em;
+    box-sizing: border-box;
+}
+
+home .copy-1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto auto;
+}
+
+home .copy p {
+    margin-top: 0.5rem;
+}
+
+home .copy-1 .mark {
+    font-size: 2em;
+    margin: 0.5rem auto 2rem auto;
+}
+
+home .copy-1 span {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 3rem;
+}
+
+home .copy-figure > figure {
+}
+
+home .copy-figure > figure img {
+    object-fit: cover;
+    width: 100%;
+    top: 100px;
+    position: relative;
+}
+
+home button {
+    background-color: teal;
+    outline: none;
+    border: solid 2px #FFF;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 24px 72px;
+    font-size: 1.8rem;
+    color: #FFF;
+
+}
+
+home .card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin: 1rem 10% 2rem 10%;
+    background-color: #FFF;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    border: solid 1px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+
+home .card div:first-child {
+    padding: 2rem;
+}
+
+home .card article {
+    font-size: 1.2rem;
+    padding: 1rem 0 2rem 0;
+}
+
+home .card figure,
+home .card figure img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border-left: solid 1px blue;
+}
+
+home .card figure img {
+    object-fit: cover;
+}
+
+home .container-video,
+home .container-video video {
+    width: 80%;
+    height: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+home .container-video video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
