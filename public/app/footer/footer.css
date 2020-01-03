@@ -1,0 +1,12 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 140px;
+    background-color: #000;
+    font-size: 1rem;
+}
+
+footer > * {
+    padding: 24px;
+}
