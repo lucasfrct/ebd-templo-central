@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br" ng-app="ebd">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EBD</title>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="vendor/images/ADTC-chama-100px.png"/>
+		<link rel="icon" href="vendor/images/ADTC-chama-100px.png" />
+		<title>EBD</title>
 
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-reset.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/typography.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/component-window.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/component-align.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-container.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xs.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-sm.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-md.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-lg.css">
-    <link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xl.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-reset.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/typography.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component-window.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component-align.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-container.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xs.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-sm.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-md.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-lg.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xl.css">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.6.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.6.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.6.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.6.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.6.1/firebase-storage.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+		<!-- update the version number as needed -->
+		<script defer src="/__/firebase/7.6.1/firebase-app.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="/__/firebase/7.6.1/firebase-auth.js"></script>
+		<script defer src="/__/firebase/7.6.1/firebase-database.js"></script>
+		<script defer src="/__/firebase/7.6.1/firebase-messaging.js"></script>
+		<script defer src="/__/firebase/7.6.1/firebase-storage.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+		<!-- initialize the SDK after all desired features are loaded -->
+		<script defer src="/__/firebase/init.js"></script>
 
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="lib/angular/angular-route.min.js"></script>
+		<!-- AMGULAR MODULE-->
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular/angular-route.min.js"></script>
 
-    <script src="app/ebd.module.js"></script>
-    <script src="app/ebd.config.js"></script>
+		<script src="app/ebd.module.js"></script>
+		<script src="app/ebd.config.js"></script>
 
-    <script src="app/home/home.component.js"></script>
+		<script src="app/header/header.component.js"></script>
+		<script src="app/menu/menu.component.js"></script>
+		<script src="app/footer/footer.component.js"></script>
+		<script src="app/home/home.component.js"></script>
+		<script src="app/register/register.component.js"></script>
 
-  </head>
-  <body class="fluid">
-    <a href="https://quizlet.com/pt-br" style="position:absolute;z-index:10000;background-color:#000;color:#FFF;padding:4px;">Site Modelo</a>
-    <ng-view></ng-view>
-  </body>
+	</head>
+  	<body class="fluid">
+		<!--a href="https://quizlet.com/pt-br" 
+      		style="position:absolute;z-index:10000;background-color:#000;color:#FFF;padding:4px; font-size:0.4em;float:right;right:0;"
+		>Site Modelo</a-->
+		<header></header>
+		<ng-view></ng-view>
+		<footer></footer>
+	</body>
 </html>
