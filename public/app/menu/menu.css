@@ -1,53 +1,6 @@
 menu {
-    display: grid;
-    grid-template-columns: 150px 1fr 250px;
-    grid-template-rows: 80px;
-    text-align: left;
+    height: 80px;
     line-height: 80px;
-}
-
-menu div > form {
-    display: block;
-    position: absolute;
-    width: 150px;
-    z-index: 10;
-    background-color: transparent;
-}
-
-menu div > form input {
-    width: 100%;
-    font-size: 1rem;
-    padding: 4px 4px 4px 8px;
-    margin: 0;
-    border-radius: 4px;
-    border: solid 1px rgba(255,255,255,0.4);
-    outline: none;
-    top:-5px;
-    position: relative;
-    background-color: rgba(0,138,198,0.3);
-    color: #FFFFFF;
-}
-
-menu div > form,
-menu div > form > input {
-    transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    will-change: auto;
-}
-
-menu div > form:hover,
-menu div > form:focus {
-    width: calc(100% - 264px);
-}
-
-menu div > form:hover input,
-menu div > form:focus input {
-    padding: 12px 16px 16px 24px;
-    font-size: 1.3rem;
-    background-color: rgba(0,128,188,1);
 }
 
 menu div > button {
@@ -60,4 +13,11 @@ menu div > button {
     color: #FFFFFF;
     background-color: teal;
     font-size: 1.2rem;
+}
+
+@media ( min-width: 768px ) {
+    menu .title {
+        text-align: right !important;
+        padding-right: 64px;
+    }
 }
