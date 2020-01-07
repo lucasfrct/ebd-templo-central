@@ -40,11 +40,10 @@ body .active {
 }
 
 body .modal {
-	-webkit-align-items: center !important;
+	--webkit-align-items: center !important;
 	align-items: center !important;
 	background-color: rgba( 0, 0 , 0, 0.6 ) !important;
-	display: -webkit-flex !important;
-	display: flex !important;
+	display: block;
 	height: 100vh !important;
 	-webkit-justify-content: center !important;
 	justify-content: center !important;
@@ -52,26 +51,26 @@ body .modal {
 	min-width: 160px;
 	overflow: hidden !important;
 	position: fixed !important;
-	width: 100vW !important;
-	z-index: -1 !important;
+	width: 100% !important;
+	top: 0;
+	left:0;
 }
 
 body .alert,
 body .modal {
-	opacity: 0;
 	position: fixed;
+	opacity: 1;
 	-webkit-transform: translate( 0, -100vh );
 	-moz-transform: translate( 0, -100vh );
 	-ms-transform: translate( 0, -100vh );
 	-o-transform: translate( 0, -100vh );
 	transform: translate( 0, -100vh );
-	-webkit-transition: opacity 0.1s ease-in-out 0.3s, transform 0.3s ease-in-out, z-index 0.01s linear 0.4s;
-	-moz-transition: opacity 0.1s ease-in-out 0.3s, transform 0.3s ease-in-out, z-index 0.01s linear 0.4s;
-	-ms-transition: opacity 0.1s ease-in-out 0.3s, transform 0.3s ease-in-out, z-index 0.01s linear 0.4s;
-	-o-transition: opacity 0.1s ease-in-out 0.3s, transform 0.3s ease-in-out, z-index 0.01s linear 0.4s;
-	transition: opacity 0.1s ease-in-out 0.3s, transform 0.3s ease-in-out, z-index 0.01s linear 0.4s;
-	will-change: opacity, transform, z-index, transition;
-	z-index: -1 !important;
+	-webkit-transition: transform 0.1s ease-in-out 0.3s;
+	-moz-transition: transform 0.1s ease-in-out 0.3s;
+	-ms-transition: transform 0.1s ease-in-out 0.3s;
+	-o-transition: transform 0.1s ease-in-out 0.3s;
+	transition: transform 0.1s ease-in-out 0.3s;
+	will-change: transform, transition;
 }
 
 body .alert.active,
@@ -82,13 +81,13 @@ body .modal.active {
 	-ms-transform: translate( 0, 0 ) !important;
 	-o-transform: translate( 0, 0 ) !important;
 	transform: translate( 0, 0 ) !important;
-	-webkit-transition: opacity 0.05s ease-in-out, transform 0.3s ease-in-out 0.01s, z-index 0.01s linear;
-	-moz-transition: opacity 0.05s ease-in-out, transform 0.3s ease-in-out 0.01s, z-index 0.01s linear;
-	-ms-transition: opacity 0.05s ease-in-out, transform 0.3s ease-in-out 0.01s, z-index 0.01s linear;
-	-o-transition: opacity 0.05s ease-in-out, transform 0.3s ease-in-out 0.01s, z-index 0.01s linear;
-	transition: opacity 0.05s ease-in-out, transform 0.3s ease-in-out 0.01s, z-index 0.01s linear;
-	will-change: opacity, transform, z-index, transition;
-	z-index: 1000000000 !important;
+	-webkit-transition: transform 0.3s ease-in-out 0.01s;
+	-moz-transition: transform 0.3s ease-in-out 0.01s,;
+	-ms-transition: transform 0.3s ease-in-out 0.01s;
+	-o-transition: transform 0.3s ease-in-out 0.01s;
+	transition: transform 0.3s ease-in-out 0.01s;
+	will-change: transform, transition;
+	z-index: 1;
 }
 
 body .alert .close,
@@ -185,4 +184,12 @@ body .dialog {
 		width: 50%;
 		height: 30%;
 	}
+}
+
+/* --IMAGE---- */
+.bg-image {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

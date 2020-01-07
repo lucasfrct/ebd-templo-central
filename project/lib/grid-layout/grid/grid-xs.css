@@ -29,5 +29,6 @@
     [ xs-show ]      { display: block; }
     [ xs-invisible ] { visibility: hidden; }
     [ xs-visible ]   { visibility: visible; }
-    font-size: 14px
+    
+    body {font-size: 14px;}
 }

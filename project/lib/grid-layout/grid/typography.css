@@ -1,3 +1,5 @@
+body { font-size: 100%;}
+
 i        { line-height: inherit; }
 summary  { display: list-item; }
 strong 	 { font-weight: 500; }
@@ -18,8 +20,7 @@ samp {
 	font-size: 1em;
 }
 
-details,
-menu {
+details {
 	display: block;
 }
 
@@ -30,14 +31,6 @@ blockquote {
 	border-left-color: #ee6e73;
 	border-left-style: solid;  
 }
-
-.material-icons {
-	text-rendering: optimizeLegibility;
-	-webkit-font-feature-settings: 'liga';
-	-moz-font-feature-settings: 'liga';
-	font-feature-settings: 'liga';
-}
-
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;

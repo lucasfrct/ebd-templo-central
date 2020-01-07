@@ -1,0 +1,23 @@
+.red {color: #ca373c;}
+.bg-red {background-color: #ca373c;}
+.bg-red-alpha {background-color: rgba(202,55,60,1);}
+
+.yellow {color: #fec32b;}
+.bg-yellow {background-color: #fec32b;}
+.bg-yellow-alpha {background-color:rgba(254,195,43,1);}
+
+.blue {color: #006ca8;}
+.bg-blue {background-color: #006ca8;}
+.bg-blue-alpha {background-color: rgba(0,108,168,1);}
+
+.green {color: #008a4c;}
+.bg-green {background-color: #008a4c;}
+.bg-green-alpha {background-color: rgba(0,138,76,1);}
+
+.white {color: #fbfef9;}
+.bg-white {background-color: #fbfef9;}
+.bg-white-alpha {background-color: rgba(251,254,249,1);}
+
+.black {color: #171717;}
+.bg-black {background-color: #171717;}
+.bg-black-alpha {background-color: rgba(0,0,0,0.9);}
