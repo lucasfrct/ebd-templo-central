@@ -1,23 +1,9 @@
 header {
-    background-color: #006ca8;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15) inset !important;
 }
 
 header nav {
     height: 80px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 80px;
     text-align: center;
-}
-
-header figure, header img {
-    padding: 0;
-    margin:0;
-    background-color: transparent;
-}
-
-header figure img {
-    height: 60px;
-    margin-top: 10px;
 }
