@@ -1,31 +1,53 @@
 <link rel="stylesheet" type="text/css" href="app/register/register.css">
-<form>
-    <legend>Cadastro Da Escola Dominical</legend>
-    <label>Nome:</label>
-    <input type="text" name="name" >
-    
-    <label>Email</label>
-    <input type="email" name="email" >
+<section container class="bg-image image-1">
+    <form ng-submit="register(registry)" xs="1-12">
+        <legend>Cadastro da Escola Dominical</legend>
+        <label >Nome:</label>
+        <input type="text" name="name" ng-model="registry.name" class="{{valid.name}}" placeholder="Seu nome" >
+        
+        <label>Email:</label>
+        <input type="email" name="email" ng-model="registry.email" class="{{valid.email}}" placeholder="exemplo@.com">
 
-    <label>telefone</label>
-    <input type="tel" name="tel">
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" 
+            ng-model="control.tel"
+            ng-keypress="control.maskTel()"
+            ng-keyup="control.clearMaskTel()"
+        class="{{valid.telefone}}" 
+        placeholder="(xx) xxxxxxxx">
 
-    <label>Data de Nascimento</label>
-    <input type="date" name="birthday">
+        <label>Data de Nascimento:</label>
+        <input type="text" name="birthday" 
+            ng-model="control.date" 
+            ng-keypress="control.maskDate()"
+            ng-keyup="control.clearMaskDate()"
+            placeholder="dd/mm/aaaa"
+        class="{{valid.birthday}}">
 
-    <label><span>Estado civil</span>
-        <input type="radio" name="marry">Solteiro
-        <input type="radio" name="marry">Casado
-    </label>
+        <label class="{{valid.marital}}">Estado Civil:</label>
+        <label class="l-radio"><input type="radio" name="marital" value="single" ng-model="registry.marital">Solteiro</label>
+        <label class="l-radio"><input type="radio" name="matital" value="married"ng-model="registry.marital">Casado</label>
 
-    <label>Classe Da escoala Dominical:</label>
-    <select name="class">
-        <option>Crianças</option>
-        <option>Adolescentes</option>
-        <option>Juniores</option>
-        <option>Jovens</option>
-        <option>Adultos</option>
-    </select>
+        <label class="l-select">Classe da Escola Dominical:</label>
+        <select name="class" ng-model="registry.class" class="{{valid.class}}">
+            <option value="" disabled>Escolha uma classe</option>
+            <option ng-repeat="cl in control.classes">{{cl}}</option>
+        </select>
+        <span class="form-alert red">
+            <em ng-repeat="alert in valid.alert">{{alert}}</em>
+        </span>
+        <button class="btn" type="submit">Cadastrar</button>
+    </form>
 
-    <button type="submit">Cadastrar</button>
-</form>
+    <div class="modal {{control.toggle}}" xs="1-12">
+        <div class="modal-container">
+            <h3 class="modal-header">Cadastro da EBD</h3>
+            <div class="modal-content">
+                <p>{{control.msg}}</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" type="button" ng-click="control.toggleModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+</section>
