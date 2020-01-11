@@ -1,6 +1,6 @@
 menu {
-    height: 80px;
-    line-height: 80px;
+    min-height: 80px;
+    line-height: auto;
 }
 
 menu div > button {
