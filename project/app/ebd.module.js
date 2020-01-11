@@ -2,5 +2,5 @@
     "use strict";
 
     angular 
-        .module("ebd", [ "ngRoute" ]);
+        .module("ebd", [ "ngRoute", "ngSanitize" ]);
 })();

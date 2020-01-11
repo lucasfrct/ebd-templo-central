@@ -29,6 +29,7 @@
 		<!-- AMGULAR MODULE-->
 		<script src="lib/angular/angular.min.js"></script>
 		<script src="lib/angular/angular-route.min.js"></script>
+		<script src="lib/angular/angular-sanitize.min.js"></script>
 		
 		<script src="app/ebd.module.js"></script>
 		<script src="app/ebd.config.js"></script>
@@ -36,21 +37,25 @@
 		<!------------FIREBASE --------------------->
 		<script src="app/firebase/firebase.init.service.js"></script>
 		<script src="app/firebase/firebase.register.service.js"></script>
+		<script src="app/firebase/firebase.admin.service.js"></script>
 
 		<script src="app/header/header.component.js"></script>
 		<script src="app/menu/menu.component.js"></script>
 		<script src="app/footer/footer.component.js"></script>
 		<script src="app/home/home.component.js"></script>
 		<script src="app/register/register.component.js"></script>
-
-
+		<script src="app/admin/admin.component.js"></script>
+		<script src="app/call/call.component.js"></script>
+ 
 	</head>
   	<body class="fluid">
 		<!--a href="https://quizlet.com/pt-br" 
       		style="position:absolute;z-index:10000;background-color:#000;color:#FFF;padding:4px; font-size:0.4em;float:right;right:0;"
 		>Site Modelo</a-->
-		<header class="bg-blue"></header>
-		<ng-view></ng-view>
-		<footer class="bg-black"></footer>
+		<header container class="bg-blue"></header>
+		<main>
+			<ng-view></ng-view>
+		</main>
+		<footer container class="bg-black" ></footer>
 	</body>
 </html>

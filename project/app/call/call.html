@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="app/call/call.css">
+
+<section xs="1-12" class="article" ng-repeat="article in control.articles.reverse()">
+    <meta property="og:image" content="{{article.image}}" />
+    <figure style="max-height: 350px; margin-bottom: 48px;">
+        <img ng-src="{{article.image}}" style="max-height: 350px; width: 100%; object-fit: cover">
+    </figure>
+    <h5><b>{{article.title}}</b></h5>
+    <h6>Lição {{article.lesson}} da classe {{article.class}} por <b>{{article.auth}}</b></h6>
+    <hr>
+    <span style="font-size: 1rem">{{article.date}}</span>
+    <article ng-bind-html='article.text' >
+    </article>
+    <h6>{{article.quarter}}º trimestre de {{article.year}}</h6>
+</section>
