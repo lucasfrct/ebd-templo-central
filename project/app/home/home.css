@@ -1,30 +1,29 @@
 home {
-
 }
 
-home main > section {
+hom > section {
     min-height: 100vh;
 }
 
-home main > section:first-child {
+home > section:first-child {
     min-height: calc(100vh - 80px);
 }
 
 /* --COPY-- */
-home main > section > .copy {
+home > section > .copy {
     padding: 0 1rem 1rem 1rem;
 } 
 
-home main > section > .copy > * {
+home > section > .copy > * {
     text-align: center;
 }
 
-home main > section > .copy > p {
+home > section > .copy > p {
     font-size: 1.4rem;
     padding: 1rem;
 }
 
-home main > section > .copy > .btn {
+home > section > .copy > .btn {
     float: right;
     margin-right: 24px;
     height: 64px;
@@ -33,10 +32,10 @@ home main > section > .copy > .btn {
     font-size: 1.2rem;
 }
 
-home main .image-1 {
+home .image-1 {
     background-image: url("../../vendor/images/ebd-bg-0.jpg"); 
 }
-home main .image-2 {
+home .image-2 {
     background-image: url("../../vendor/images/bible-01.jpg"); 
 }
 
@@ -80,23 +79,23 @@ home .video-main > video {
 }
 
 @media ( min-width: 768px ) {
-    home main > section > .copy > h4 {
+    home > section > .copy > h4 {
         margin-top: 6rem;
         font-size: 3.5rem;
     }
 
-    home main > section > .copy > h2 {
+    home > section > .copy > h2 {
         font-size: 7rem;
         margin-top: 4rem;
     }
 
-    home main > section > .copy > p {
+    home > section > .copy > p {
         font-size: 2.2rem;
         padding: 2rem 4rem;
         margin-top: 3rem;
     }
 
-    home main > section > .copy > .btn {
+    home > section > .copy > .btn {
         float: none;
         margin: auto;
         display: block;

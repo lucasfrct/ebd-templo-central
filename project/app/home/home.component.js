@@ -9,7 +9,7 @@
         });
 
     function HomeConfig( $routeProvider ) {
-        $routeProvider.when("/", { template: "<home></home>" });
+        $routeProvider.when("/", { template: "<home container></home>" });
     };
 
     function HomeController ( $scope ) {
