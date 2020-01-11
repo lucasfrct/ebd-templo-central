@@ -3,7 +3,7 @@ header {
 }
 
 header nav {
-    height: 80px;
+    min-height: 80px;
     width: 100%;
     text-align: center;
 }
