@@ -1,0 +1,14 @@
+call .article {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+call .article article {
+    padding: 24px;
+    font-size: 1.5rem;
+    max-width: 800px;
+    text-align: justify;
+    text-justify: inter-word;
+}
