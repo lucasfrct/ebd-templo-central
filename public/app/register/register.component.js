@@ -9,7 +9,7 @@
         })
 
     function RegisterConfig ( $routeProvider ) {
-        $routeProvider.when("/register", { template: "<register></register>"})
+        $routeProvider.when("/register", { template: "<register container></register>"})
     }
 
     function RegisterController($scope, $filter, $firebase) {
@@ -21,8 +21,7 @@
                 "Adolescentes: 12 a 15 anos", 
                 "Jovens: 16 anos ou mais", 
                 "Adultos", 
-                "Batismo", 
-                "Professores da EBD"
+                "Batismo",
             ],
             msg:"",
             tel:"",

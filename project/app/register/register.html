@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="app/register/register.css">
-<section container class="bg-image image-1">
+<section class="bg-image image-1" xs="1-12">
     <form ng-submit="register(registry)" xs="1-12">
         <legend>Cadastro da Escola Dominical</legend>
         <label >Nome:</label>
@@ -31,7 +31,7 @@
         <label class="l-select">Classe da Escola Dominical:</label>
         <select name="class" ng-model="registry.class" class="{{valid.class}}">
             <option value="" disabled>Escolha uma classe</option>
-            <option ng-repeat="cl in control.classes">{{cl}}</option>
+            <option value="{{cl}}" ng-repeat="cl in control.classes">{{cl}}</option>
         </select>
         <span class="form-alert red">
             <em ng-repeat="alert in valid.alert">{{alert}}</em>
