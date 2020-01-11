@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="app/admin/admin.css">
+<section class="select-class">
+    <div>
+        <em><b>Classe:</b></em> 
+        <select ng-model="control.class">
+            <option disabled>Selecionae uma classe</option>
+            <option value="{{cl}}" ng-repeat="cl in control.classes">{{cl}}</option>
+        </select>
+    </div>
+    <div container>
+        <h6><b>Professores:</b></h6>
+        <span xs="1-12" md="1-6" ng-repeat="teacher in control.teachers">
+            {{teacher.name}}
+        </span>
+    </div>
+</section>
+<section class="list-students">
+    <h5><b>Alunos</b> <span class="number-students">{{(control.students | filter:control.class).length}}</span></h5>
+    <ul container>
+       <li xs="1-12" md="1-6" ng-repeat="student in control.students | filter:control.class as fill">
+           <strong>Name: {{student.name}}</strong>
+           <em>Email: {{student.email}}</em>
+           <span>Cel: {{student.telefone}}</strong>
+       </li> 
+    </ul>
+</section>
