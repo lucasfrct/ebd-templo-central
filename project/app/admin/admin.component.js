@@ -16,10 +16,13 @@
     function AdminController($scope, AdminService) {
 
         $scope.control = {
-            classes: ["Crianças","Juniores","Adolescentes","Jovens","Adultos","Batismo"],
-            class: "Jovens",
-            teachers: ["Junior","Eli Filho"],
+            classes: ["Crianças","Juniores","Adolescentes","Jovens","Adultos Homens", "Adultos Mulheres", "Batismo"],
+            teachers: [],
             students: [],
+            class: "Jovens",
+            classFilter: "Jovens",
+            genre: "male",
+            strict: false,
             number: 0,
         }
 
@@ -30,7 +33,22 @@
         })
 
         $scope.$watch("control.class", (newValue)=> {
+            
             $scope.control.teachers = Filterteachers($scope.control.students, newValue);
+            $scope.control.classFilter = $scope.control.class.replace("Homens", "").replace("Mulheres", "").trim()
+
+            $scope.control.strict = false
+            $scope.control.genre = "male"
+
+            if ($scope.control.class.indexOf("Mulheres") != -1) {
+                $scope.control.strict = true
+                $scope.control.genre = "female"
+            }
+
+            if ($scope.control.class.indexOf("Homens") != -1) {
+                $scope.control.strict = true
+                $scope.control.genre = "male"
+            }
         })
 
         function Filterteachers(data, cl) {
