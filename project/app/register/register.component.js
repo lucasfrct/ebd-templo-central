@@ -40,6 +40,7 @@
             telefone: "",
             birthday: "",
             marital: "",
+            genre: "",
             class: "",
         }
 
@@ -66,6 +67,10 @@
 
         function checkMarital( marital ) {
             return (marital == "single" || marital == "married") ? true : false
+        }
+
+        function checkGenre( genre ) {
+            return (genre == "male" || genre == "female") ? true : false
         }
 
         function checkClass(cl){
@@ -138,6 +143,7 @@
                 telefone: "",
                 birthday: "",
                 marital:"",
+                genre: "",
                 class: "",
                 alert: [],
             }
@@ -147,6 +153,7 @@
             $scope.valid.telefone = action(checKTelefone(registry.telefone))
             $scope.valid.birthday = action(checkBirthday(registry.birthday))
             $scope.valid.marital = action(checkMarital(registry.marital))
+            $scope.valid.genre = action(checkGenre(registry.genre))
             $scope.valid.class = action(checkClass(registry.class))
 
             function action ( val ) {
@@ -159,7 +166,7 @@
             } 
 
             if (!checkEmail(registry.email)) {
-                $scope.registry.rmail = ""
+                $scope.registry.email = ""
                 $scope.valid.alert.push("Favor inserir um email válido");
             }
 
@@ -176,8 +183,13 @@
             } 
 
             if (!checkMarital(registry.marital)) {
-                $scope.registry.birthday = ""
+                $scope.registry.marital = ""
                 $scope.valid.alert.push(" Favor escolher um estado civil");
+            }
+
+            if (!checkGenre(registry.genre)) {
+                $scope.registry.genre = ""
+                $scope.valid.alert.push(" Favor escolher um sexo");
             }
 
             if (!checkClass(registry.class)) {
@@ -191,6 +203,7 @@
                 && checKTelefone(registry.telefone)
                 && checkBirthday(registry.birthday)
                 && checkMarital(registry.marital)
+                && checkGenre(registry.genre)
                 && checkClass(registry.class)
             ) ? true : false;
             

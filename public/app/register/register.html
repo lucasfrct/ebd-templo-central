@@ -28,6 +28,10 @@
         <label class="l-radio"><input type="radio" name="marital" value="single" ng-model="registry.marital">Solteiro</label>
         <label class="l-radio"><input type="radio" name="matital" value="married"ng-model="registry.marital">Casado</label>
 
+        <label class="{{valid.genre}}">Sexo:</label>
+        <label class="l-radio"><input type="radio" name="genre" value="male" ng-model="registry.genre">Masculino</label>
+        <label class="l-radio"><input type="radio" name="genre" value="female"ng-model="registry.genre">Feminino</label>
+
         <label class="l-select">Classe da Escola Dominical:</label>
         <select name="class" ng-model="registry.class" class="{{valid.class}}">
             <option value="" disabled>Escolha uma classe</option>
