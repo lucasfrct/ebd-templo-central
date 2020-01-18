@@ -20,6 +20,7 @@
     transition: all 0.2s ease-in-out;
     will-change: transition;
     margin: 0.5rem 0.75rem;
+    outline: 0;
 }
 
 .btn:hover, 
