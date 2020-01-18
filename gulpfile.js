@@ -16,6 +16,7 @@ const ImageMin     = require("gulp-imagemin");
 Sass.compiler       = require("node-sass");
 
 Gulp.task("MainHtml", MainHtmlCompiler);
+Gulp.task("VendorCss", VendorCssCompiler);
 Gulp.task("VendorScss", VendorScssCompiler);
 Gulp.task("VendorJS", VendorJsCompiler);
 Gulp.task("VendorImg", VendorImgCompiler);
@@ -24,6 +25,7 @@ Gulp.task("Lib", LibCompiler);
 
 Gulp.task('init', function() {
     Gulp.watch("project/*.html", Gulp.series('MainHtml'));
+    Gulp.watch("project/vendor/css/**/*.css", Gulp.series('VendorCss'));
     Gulp.watch("project/vendor/scss/**/*.scss", Gulp.series('VendorScss'));
     Gulp.watch("project/vendor/js/**/*.js", Gulp.series('VendorJS'));
     Gulp.watch("project/vendor/images/**/*", Gulp.series('VendorImg'));
@@ -35,6 +37,10 @@ function MainHtmlCompiler ( ) {
     return Gulp 
         .src("project/*.html")
         .pipe(Gulp.dest("public"));
+};
+
+function VendorCssCompiler ( ) {
+    return CompilerSass ("project/vendor/css/**/*.css", "public/vendor/css");
 };
 
 function VendorScssCompiler ( ) {
