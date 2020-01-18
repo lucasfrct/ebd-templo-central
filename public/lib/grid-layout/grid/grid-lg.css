@@ -29,5 +29,5 @@
     [ lg-show ]      { display: block; }
     [ lg-invisible ] { visibility: hidden; }
     [ lg-visible ]   { visibility: visible; }
-    font-size: 14.5px;
+    [ lg-center]     { text-align: center; }
 }

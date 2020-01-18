@@ -1,5 +1,3 @@
-body { font-size: 100%;}
-
 i        { line-height: inherit; }
 summary  { display: list-item; }
 strong 	 { font-weight: 500; }
@@ -106,25 +104,25 @@ footer .copyright {
 	background-color: rgba(51, 51, 51, 0.08);
 }
 
-@media (max-width: 360px) { .fluid { font-size: 1.2rem; } }
-@media (min-width: 360px) { .fluid { font-size: 1.2rem; } }
-@media (min-width: 390px) { .fluid { font-size: 1.224rem; } }
-@media (min-width: 420px) { .fluid { font-size: 1.248rem; } }
-@media (min-width: 450px) { .fluid { font-size: 1.272rem; } }
-@media (min-width: 480px) { .fluid { font-size: 1.296rem; } }
-@media (min-width: 510px) { .fluid { font-size: 1.32rem; } }
-@media (min-width: 540px) { .fluid { font-size: 1.344rem; } }
-@media (min-width: 570px) { .fluid { font-size: 1.368rem; } }
-@media (min-width: 600px) { .fluid { font-size: 1.392rem; } }
-@media (min-width: 630px) { .fluid { font-size: 1.416rem; } }
-@media (min-width: 660px) { .fluid { font-size: 1.44rem; } }
-@media (min-width: 690px) { .fluid { font-size: 1.464rem; } }
-@media (min-width: 720px) { .fluid { font-size: 1.488rem; } }
-@media (min-width: 750px) { .fluid { font-size: 1.512rem; } }
-@media (min-width: 780px) { .fluid { font-size: 1.536rem; } }
-@media (min-width: 810px) { .fluid { font-size: 1.56rem; } }
-@media (min-width: 840px) { .fluid { font-size: 1.584rem; } }
-@media (min-width: 870px) { .fluid { font-size: 1.608rem; } }
-@media (min-width: 900px) { .fluid { font-size: 1.632rem; } }
-@media (min-width: 930px) { .fluid { font-size: 1.656rem; } }
-@media (min-width: 960px) { .fluid { font-size: 1.68rem; } }
+@media (max-width: 360px) { body { font-size: 0.958rem; } }
+@media (min-width: 360px) { body { font-size: 1.135rem; } }
+@media (min-width: 390px) { body { font-size: 1.224rem; } }
+@media (min-width: 420px) { body { font-size: 1.248rem; } }
+@media (min-width: 450px) { body { font-size: 1.272rem; } }
+@media (min-width: 480px) { body { font-size: 1.296rem; } }
+@media (min-width: 510px) { body { font-size: 1.321rem; } }
+@media (min-width: 540px) { body { font-size: 1.344rem; } }
+@media (min-width: 570px) { body { font-size: 1.368rem; } }
+@media (min-width: 600px) { body { font-size: 1.392rem; } }
+@media (min-width: 630px) { body { font-size: 1.416rem; } }
+@media (min-width: 660px) { body { font-size: 1.441rem; } }
+@media (min-width: 690px) { body { font-size: 1.464rem; } }
+@media (min-width: 720px) { body { font-size: 1.488rem; } }
+@media (min-width: 750px) { body { font-size: 1.512rem; } }
+@media (min-width: 780px) { body { font-size: 1.536rem; } }
+@media (min-width: 810px) { body { font-size: 1.561rem; } }
+@media (min-width: 840px) { body { font-size: 1.584rem; } }
+@media (min-width: 870px) { body { font-size: 1.608rem; } }
+@media (min-width: 900px) { body { font-size: 1.632rem; } }
+@media (min-width: 930px) { body { font-size: 1.656rem; } }
+@media (min-width: 960px) { body { font-size: 1.681rem; } }

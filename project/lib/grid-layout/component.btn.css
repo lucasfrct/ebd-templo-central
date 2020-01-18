@@ -1,16 +1,35 @@
 .btn {
+    background-color: #BDBDBD;
     border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     border-radius: 2px;
     display: inline-block;
-    height: 36px;
-    line-height: 36px;
-    padding: 0 16px;
     text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
-    background-color: #fec32b;
-    margin: 8px auto;
     color: #FFF;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 12px rgba(0,0,0,0.3);
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    will-change: transition;
+    margin: 0.5rem 0.75rem;
+}
+
+.btn:hover, 
+.btn:focus {
+    color: #DDD;
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.4);
+}
+
+.btn:active {
+    background-color:#008a4c;
+    color: #fbfef9;
+    box-shadow: 0px 1px 8px rgba(255,255,255,0.4);
 }

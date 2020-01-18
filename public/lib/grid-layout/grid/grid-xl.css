@@ -29,5 +29,5 @@
     [ xl-show ]      { display: block; }
     [ xl-invisible ] { visibility: hidden; }
     [ xl-visible ]   { visibility: visible; }
-    font-size: 15px;
+    [ xl-center]     { text-align: center; }
 }

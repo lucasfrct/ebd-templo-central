@@ -29,6 +29,5 @@
     [ xs-show ]      { display: block; }
     [ xs-invisible ] { visibility: hidden; }
     [ xs-visible ]   { visibility: visible; }
-    
-    body {font-size: 14px;}
+    [ xs-center]     { text-align: center; }
 }

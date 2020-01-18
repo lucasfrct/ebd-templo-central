@@ -8,10 +8,10 @@
     box-sizing: inherit;
 }
 
-html, button {
+html,
+html * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.87);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-weight: normal;
     line-height: 1.5;
@@ -19,14 +19,14 @@ html, button {
     -webkit-text-size-adjust: 100%;
 }
 
-
 html,
 body,
 body > * {  
     scroll-behavior: smooth;
 }
 
-body {  
+body {
+    font-size: 16px;
     display: block;
     width: 100%;
     margin: 0;
@@ -38,8 +38,9 @@ body {
 
 header,
 main,
-footer,
-menu {
+footer {
+    box-sizing: border-box;
+    color: #000;
     display: webkit-grid;
     display: moz-grid;
     display: ms-grid;
@@ -50,24 +51,16 @@ menu {
     padding: 0;
 }
 
-header, 
-footer {
-  color: #fff;
-}
-
-footer {
-    background-color: rgba(66,66,66,0.5);
-}
-
 article,
 aside,
 nav,
+menu,
 section {
     display: block;
-}
-
-section {
-    padding: 1rem 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
 }
 
 a {
@@ -131,6 +124,7 @@ canvas {
 
 hr {
     -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
     overflow: visible;
@@ -138,6 +132,64 @@ hr {
 
 template {
     display: none;
+}
+
+
+audio,
+video,
+img {
+    display: inline-block;
+    height: inherit;
+    max-height: inherit;
+    background-color: transparent;
+}
+
+video {
+    outline: 0;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+video.responsive,
+img.reesponsive,
+figure, 
+img {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    min-height: 32px;
+    min-width: 32px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.video-container > iframe, 
+.video-container > object, 
+.video-container > embed,
+.video-container > video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+    min-height: 100px;
+}
+
+figcaption,
+figure {
+  display: block;
 }
 
 [ hide ] {
@@ -154,30 +206,6 @@ template {
 
 [ visible ] {
     visibility: visible;
-}
-
-[ center-horizontal ], 
-[ center-vertical ],
-[ center-block ],
-[ center ] {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-[ center-horizontal ],
-[ center-block ],
-[ center ] {
-    justify-content: center;
-}
-
-[ center-vertical ],
-[ center-block ] {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 [ left ] {
@@ -199,6 +227,10 @@ template {
 }
 
 [ circle ] {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -213,45 +245,4 @@ template {
 
 [ no-padding ] {
     padding: 0;
-}
-
-audio,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container > iframe, 
-.video-container > object, 
-.video-container > embed,
-.video-container > video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-img.responsive,
-video.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-figcaption,
-figure {
-  display: block;
-  padding: 0;
-  margin: 0;
 }
