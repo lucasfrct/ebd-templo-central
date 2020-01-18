@@ -1,29 +1,141 @@
+<style>
+home > section {
+    min-height: 100vh;
+}
+
+home > section.first {
+    min-height: calc(100vh - 80px);
+}
+
+home .copy {
+    border: solid 0.1px transparent;
+    padding: 0 1em 2em 1em;
+    clear: both;
+    text-align: center;
+} 
+
+home .copy > p {
+    font-size: 1.2rem;
+    padding: 1.2em;
+}
+
+home .copy > .btn {
+    margin: 2rem auto 1rem auto;
+    display: inline-block;
+    width: auto;
+}
+
+home .image-1 {
+    background-image: url("../../vendor/images/ebd-bg-0.jpg"); 
+}
+home .image-2 {
+    background-image: url("../../vendor/images/bible-01.jpg"); 
+}
+
+home .card {
+    width: 100%;
+    margin: 1rem auto 2rem auto;
+    padding: 0;
+}
+
+home .card > div:first-child {
+    padding: 1.2em 1.2em 2em 1.2em;
+}
+
+home .card article {
+    font-size: 1.2rem;
+    padding: 1em 1.2em;
+}
+
+home .card  figure,
+home .card figure > img {
+    width: 100%;
+    height: 100%;
+}
+
+home .card figure img {
+    object-fit: cover;
+}
+
+home .video-main {
+    margin: 1rem;
+}
+
+home .video-main video { 
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+} 
+
+
+@media ( min-width: 576px ) {
+    home .copy { padding: 1rem 2rem 3rem 2rem; }
+    home .copy > h5 { font-size: 2rem;}
+    home .copy > h2 { font-size: 4.5rem; }
+    home .copy > p { font-size: 1.5rem; }
+    home .copy > .btn { font-size: 1.6rem; }
+
+    home .card h4 { font-size: 3rem; }
+    home .card article { font-size: 1.5rem; }
+
+    home .video-main { margin: 2rem; }
+}
+
+@media ( min-width: 768px ) {
+    home .copy { padding: 2rem 3rem 4rem 3rem; }
+    home .copy > h5 { font-size: 3rem; }
+    home .copy > h2 { font-size: 6rem; }
+    home .copy > p { font-size: 2rem; }
+    home .copy > .btn { font-size: 2rem; }
+
+    home .card h4 { font-size: 3.25rem; }
+    home .card article { font-size: 1.8rem; }
+
+    home .video-main { margin: 3rem; }
+}
+
+@media ( min-width: 992px ) {
+    home .copy { padding: 3rem 4rem 6rem 4rem; }
+    home .copy > h5 { font-size: 3.5rem; }
+    home .copy > h2 { font-size: 7rem; }
+    home .copy > p { font-size: 2.3rem; }
+    home .copy > .btn { font-size: 2.2rem; }
+
+    home .card h4 { font-size: 3.5rem; }
+    home .card article { font-size: 2rem; }
+
+    home .video-main { margin: 2rem 20% 3rem 20%; }
+}
+
+</style>
+
 <link rel="stylesheet" type="text/css" href="app/home/home.css">
-<section class="bg-image image-1" xs="1-12">
+
+<section class="first bg-image image-1" xs="1-12">
     <div class="copy">
-        <h4><b>#Venha e participe dessa ideia com a gente</b></h4>
+        <h5><b>#Venha e participe dessa ideia com a gente</b></h5>
         <h2><b>A EBD também é ON!</b></h2>
         <p>Para melhor comodidade, a escola dominical está adequando-se às facilidaddes da tecnologia.
             Convidamos você que está conectado a participar dessa nova transformação.</p>
-        <a href="#!/register" class="btn" >Cadastre-se</a>
+        <a href="#!/register" class="btn bg-yellow" >Cadastre-se</a>
     </div>
 </section>
 <section class="bg-image image-2" xs="1-12">
     <div class="copy">
-        <div class="card" container>
-            <div xs="1-12" md="1-8">
+        <div container class="card shadow bg-white" >
+            <div xs="1-12" md="1-6" lg="1-8">
                 <h4><b>O que é o Cadastro EBD?</b></h4>
                 <article>Com o objetivo de ter um melhor controle da frequência dos alnos na EBD, 
                     pedimos a cada aluno que faça seu cadastro.
                     É rápido e simples.</article>
             </div>
-            <div xs="1-12" md="9-12">
+            <div xs="1-12" md="7-12" lg="9-12">
                 <figure><img src="vendor/images/conected.jpg"></figure>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-image image" xs="1-12">
+<section class="" xs="1-12">
     <div class="copy">
         <h4><b>Nosso pastor tem uma mensagem para você.</b></h4>
     </div>
@@ -33,8 +145,8 @@
         </video>
     </div>
     <div class="copy">
-        <h4><b>Não perca tempo, Faça já seu cadastro</b></h4>
+        <h5><b>Não perca tempo, Faça já seu cadastro</b></h5>
         <p>EBD é um lugar para viver em família. Traga todos da sua casa.</p>
-        <a href="#!/register" class="btn" >Clique Aqui</a>
+        <a href="#!/register" class="btn bg-yellow" >Clique Aqui</a>
     </div>
 </section>

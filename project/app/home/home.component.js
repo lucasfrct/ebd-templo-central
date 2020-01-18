@@ -1,3 +1,8 @@
+/*
+ * hoem.component.js
+ * Author: Lucas Costa
+ * Data: Janeiro de 2020
+ */ 
 (()=> {
     "use strict";
     angular
@@ -8,7 +13,7 @@
             controller: [ "$scope", HomeController ],
         });
 
-    function HomeConfig( $routeProvider ) {
+    function HomeConfig($routeProvider) {
         $routeProvider.when("/", { template: "<home container></home>" });
     };
 
