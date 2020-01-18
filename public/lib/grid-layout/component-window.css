@@ -90,6 +90,40 @@ body .modal.active {
 	z-index: 1;
 }
 
+body .modal .modal-container {
+	min-height: 200px;
+	max-width: 960px;
+	background-color: #FFF;
+	top: 15vh;
+	width: 90%;
+	margin: 0 5% 0 5%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	padding: 1em;
+}
+
+body .modal .modal-header {
+	border-bottom: solid 1px #DDD;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+body .modal .modal-content,
+body .modal .modal-content * {
+	word-wrap: break-word !important;
+	display: block;
+	text-align: center;
+}
+
+body .modal .modal-footer {
+	text-align: right;
+    border-top: solid 1px #DDD;
+    padding-top: 1rem;
+}
+
 body .alert .close,
 body .modal .close {
 	cursor: pointer;
