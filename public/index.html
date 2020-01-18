@@ -5,14 +5,15 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/png" href="vendor/images/ADTC-chama-100px.png"/>
 		<link rel="icon" href="vendor/images/ADTC-chama-100px.png" />
-		<title>EBD</title>
+		<title>EBD Templo Cental</title>
 
+		<!-- GRID CSS -->
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-reset.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/typography.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component-window.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component-align.css">
-		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component.color.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component.btn.css">
+		<link rel="stylesheet" type="text/css" href="lib/grid-layout/component.color.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-container.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xs.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-sm.css">
@@ -20,13 +21,17 @@
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-lg.css">
 		<link rel="stylesheet" type="text/css" href="lib/grid-layout/grid/grid-xl.css">
 
+		<!-- LAYOUT CSS -->
+		<link rel="stylesheet" type="text/css" href="vendor/css/ebd.min.css">
+
+		<!-- FIREBASE MODULE -->
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
 
-		<!-- AMGULAR MODULE-->
+		<!-- AMGULAR MODULE -->
 		<script src="lib/angular/angular.min.js"></script>
 		<script src="lib/angular/angular-route.min.js"></script>
 		<script src="lib/angular/angular-sanitize.min.js"></script>
@@ -34,11 +39,12 @@
 		<script src="app/ebd.module.js"></script>
 		<script src="app/ebd.config.js"></script>
 		
-		<!------------FIREBASE --------------------->
+		<!------------ FIREBASE CODE --------------------->
 		<script src="app/firebase/firebase.init.service.js"></script>
 		<script src="app/firebase/firebase.register.service.js"></script>
 		<script src="app/firebase/firebase.admin.service.js"></script>
-
+		
+		<!-- ANGULAR COMPONENTS -->
 		<script src="app/header/header.component.js"></script>
 		<script src="app/menu/menu.component.js"></script>
 		<script src="app/footer/footer.component.js"></script>
@@ -46,16 +52,18 @@
 		<script src="app/register/register.component.js"></script>
 		<script src="app/admin/admin.component.js"></script>
 		<script src="app/call/call.component.js"></script>
+		<script src="app/room/room.component.js"></script>
  
 	</head>
-  	<body class="fluid">
+  	<body class="fluid bg-white">
 		<!--a href="https://quizlet.com/pt-br" 
-      		style="position:absolute;z-index:10000;background-color:#000;color:#FFF;padding:4px; font-size:0.4em;float:right;right:0;"
+			  style="position:absolute;z-index:1;background-color:#000;color:#FFF;padding:4px; font-size:0.4em;float:right;
+			  right:0; margin: 25px;"
 		>Site Modelo</a-->
 		<header container class="bg-blue"></header>
-		<main>
+		<main class="bg-white">
 			<ng-view></ng-view>
 		</main>
-		<footer container class="bg-black" ></footer>
+		<footer container class="bg-black white" ></footer>
 	</body>
 </html>
