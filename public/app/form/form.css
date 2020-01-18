@@ -1,0 +1,119 @@
+body .form {
+    max-width: 760px;
+    min-width: 300px;
+    width: calc(100% - 8px);
+    padding: 1em;
+    font-size: 1rem;
+    margin: 1rem 4px 2rem 4px;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    -ms-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    -o-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    display: block;
+}
+
+body .form > * {
+    width: 100%;
+    display: block;
+    margin: 0;
+    vertical-align: top;
+    top: 0;
+    left: 0;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body .form > legend {
+    font-size: 1.7em;
+    padding: 0.5em 0 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+body .form > label {
+    padding: 1em 0 0.05em 0;
+    font-size: 1em;
+}
+
+body .form > label.label-radio {
+    padding: 0.25em 1em 0.5em 1.5em;
+    display: inline-block;
+    width: calc(50% - 4px);
+}
+
+body .form > input,
+body .form > select,
+body .form > textarea  {
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #AAA;
+    background-color: transparent;
+    padding: 0.25em 1em 0.25em 1.5em;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+body .form > .divider {
+    background-color: #AAA;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    height: 1px !important;
+    padding: 0 !important;
+    width: 100%;
+    overflow: hidden; 
+}
+
+body .form > .btn {
+    font-size: 1.5em;
+    max-width: 400px;
+    margin: 1rem auto 3rem auto;
+}
+
+body .form > .form-alert {
+    min-height: 48px;
+    margin-top: 1rem;
+    text-align: left;
+} 
+
+
+body .form > .form-alert > * {
+    padding: 0.5em 0.5em 0.5em 1em;
+    font-weight: bold;
+    display: block;
+    margin: 2px 0 4px 0;
+}
+
+body .form .success {
+    border-bottom-color: #008a4c;
+    border-left: solid 8px #008a4c;
+}
+
+body .form .danger {
+    border-bottom-color: #ca373c;
+    border-left: solid 8px #ca373c;
+}
+
+
+@media ( min-width: 576px ) {
+    body .form { margin: 1rem 1em 2rem 1em; font-size: 1.5rem; width: calc(100% - 2em); }
+}
+
+@media ( min-width: 768px ) {
+    body .form { margin: 1rem auto 2em auto; font-size: 1.5rem; width: 100%; }
+}
+
+@media ( min-width: 992px ) {
+    body .form { font-size: 1.7rem; }
+}
