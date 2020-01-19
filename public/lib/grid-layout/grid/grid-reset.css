@@ -167,6 +167,8 @@ img {
     min-width: 32px;
     overflow: hidden;
     padding: 0;
+    object-fit: cover;
+    width: inherit;
 }
 
 .video-container > iframe, 

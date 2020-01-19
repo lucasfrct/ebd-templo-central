@@ -1,13 +1,27 @@
 <style>
-call .article {
-    padding-left: 24px;
-    padding-right: 24px;
+call .article-container {
+    padding: 1rem 1rem 2rem 1rem;
     width: calc(100% - 8px);
     margin: 60px 4px 0px 4px;
     box-sizing: border-box;
     border: solid 0.5px #EEE;
     box-shadow: 1px 1px 5px #DDD;
     background-color: #FDFDFD;
+}
+
+call .article-container > * {
+    max-width: 960px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+call .article-figure {
+    width: 100%;
+    max-width: 100%;
+    max-height: 370px;
+    height: auto;
 }
 
 call .article article {
@@ -21,15 +35,14 @@ call .article article {
 
 <link rel="stylesheet" type="text/css" href="app/call/call.css">
 
-<section xs="1-12" class="article" ng-repeat="article in control.articles">
-    <meta property="og:image" content="{{article.image}}" />
-    <figure style="max-height: 350px; margin-bottom: 48px;">
-        <img ng-src="{{article.image}}" style="max-height: 350px; width: 100%; object-fit: cover">
+<section xs="1-12" class="article-container" ng-repeat="article in control.articles">
+    <figure class="article-figure">
+        <img class="resposive" ng-src="{{article.image}}" style="">
     </figure>
     <h5><b>{{article.title}}</b></h5>
     <h6>Lição {{article.lesson}} da classe {{article.class}} por <b>{{article.auth}}</b></h6>
     <hr>
-    <span style="font-size: 1rem">{{article.date}}</span>
+    <span style="font-size: 1em">{{article.date}}</span>
     <article ng-bind-html='article.text' >
     </article>
     <h6>{{article.quarter}}º trimestre de {{article.year}}</h6>
